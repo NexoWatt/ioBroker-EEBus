@@ -1,4 +1,4 @@
-# ioBroker-EEBus (Adapter: eebus)
+# ioBroker.eebus
 
 Adapter für ioBroker, der Datenpunkte für ein EEBus-/Imsys-Smart-Meter und die Steuerung durch den Energieversorger bereitstellt.
 
@@ -35,9 +35,9 @@ Steuerung durch Energieversorger / EVU:
 
 ## Verwendung
 
-1. Adapter aus GitHub oder als ZIP installieren
-2. Instanz `eebus.0` anlegen, speichern, starten
-3. Unter `Objekte` die Datenpunkte `eebus.0.*` für deine Skripte verwenden
+1. Adapter aus GitHub oder als ZIP installieren.
+2. Instanz `eebus.0` anlegen, speichern, starten.
+3. Unter `Objekte` die Datenpunkte `eebus.0.*` für deine Skripte verwenden.
 
 Später kann die echte EEBus-Anbindung im `main.js` bzw. einer eigenen `lib/eebusClient.js`
 ergänzt werden.

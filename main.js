@@ -69,7 +69,7 @@ class EEBusAdapter extends utils.Adapter {
             'imsys.voltageL2': {
                 name: 'Voltage L2',
                 unit: 'V',
-                'role': 'value.voltage',
+                role: 'value.voltage',
             },
             'imsys.voltageL3': {
                 name: 'Voltage L3',
