@@ -1,0 +1,62 @@
+{
+  "common": {
+    "name": "nexowatt-eebus",
+    "version": "0.0.1",
+    "title": "NexoWatt EEBus / Imsys",
+    "titleLang": {
+      "en": "NexoWatt EEBus / Imsys",
+      "de": "NexoWatt EEBus / Imsys"
+    },
+    "desc": {
+      "en": "Provides datapoints for EEBus / Imsys integration and utility control for NexoWatt EMS.",
+      "de": "Stellt Datenpunkte für EEBus-/Imsys-Integration und Steuerung durch den Energieversorger für NexoWatt EMS bereit."
+    },
+    "platform": "Javascript/Node.js",
+    "license": "MIT",
+    "mode": "daemon",
+    "type": "energy",
+    "icon": "nexowatt.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/your-account/iobroker.nexowatt-eebus/master/admin/nexowatt.png",
+    "readme": "https://github.com/your-account/iobroker.nexowatt-eebus/blob/master/README.md",
+    "loglevel": "info",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "push",
+    "materialize": true,
+    "messagebox": false
+  },
+  "native": {
+    "host": "",
+    "port": 4711,
+    "useTLS": true,
+    "allowUtilityControl": true
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "imsys",
+      "type": "channel",
+      "common": {
+        "name": "Imsys meter"
+      },
+      "native": {}
+    },
+    {
+      "_id": "utility",
+      "type": "channel",
+      "common": {
+        "name": "Utility control"
+      },
+      "native": {}
+    }
+  ]
+}
