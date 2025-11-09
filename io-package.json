@@ -1,6 +1,6 @@
 {
   "common": {
-    "name": "nexowatt-eebus",
+    "name": "eebus",
     "version": "0.0.1",
     "title": "NexoWatt EEBus / Imsys",
     "titleLang": {
@@ -17,8 +17,8 @@
     "type": "energy",
     "icon": "nexowatt.png",
     "enabled": true,
-    "extIcon": "https://raw.githubusercontent.com/your-account/iobroker.nexowatt-eebus/master/admin/nexowatt.png",
-    "readme": "https://github.com/your-account/iobroker.nexowatt-eebus/blob/master/README.md",
+    "extIcon": "https://raw.githubusercontent.com/NexoWatt/ioBroker-EEBus/master/admin/nexowatt.png",
+    "readme": "https://github.com/NexoWatt/ioBroker-EEBus/blob/master/README.md",
     "loglevel": "info",
     "compact": true,
     "connectionType": "local",

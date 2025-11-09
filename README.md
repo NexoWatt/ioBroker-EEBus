@@ -1,13 +1,17 @@
-# ioBroker.nexowatt-eebus
+# ioBroker-EEBus (Adapter: eebus)
 
 Adapter für ioBroker, der Datenpunkte für ein EEBus-/Imsys-Smart-Meter und die Steuerung durch den Energieversorger bereitstellt.
 
 **Wichtig:** Diese Version implementiert noch **keine** echte EEBus-Kommunikation, sondern legt nur die Datenpunkte an,
 damit du sie in eigenen JavaScript- oder Blockly-Skripten füllen und weiterverarbeiten kannst.
 
+## Adapter-Name
+
+In ioBroker heißt der Adapter **eebus** (Instanz z.B. `eebus.0`).
+
 ## Datenpunkte
 
-Unter `nexowatt-eebus.0.*` werden unter anderem angelegt:
+Unter `eebus.0.*` werden unter anderem angelegt:
 
 - `imsys.powerActive` (W)
 - `imsys.powerReactive` (var)
@@ -31,9 +35,9 @@ Steuerung durch Energieversorger / EVU:
 
 ## Verwendung
 
-1. Adapter aus GitHub installieren (oder ZIP-Datei)
-2. Instanz anlegen, speichern, starten
-3. Unter `Objekte` die Datenpunkte `nexowatt-eebus.0.*` für deine Skripte verwenden
+1. Adapter aus GitHub oder als ZIP installieren
+2. Instanz `eebus.0` anlegen, speichern, starten
+3. Unter `Objekte` die Datenpunkte `eebus.0.*` für deine Skripte verwenden
 
 Später kann die echte EEBus-Anbindung im `main.js` bzw. einer eigenen `lib/eebusClient.js`
 ergänzt werden.

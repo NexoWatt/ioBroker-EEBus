@@ -2,11 +2,11 @@
 
 const utils = require('@iobroker/adapter-core');
 
-class NexowattEEBus extends utils.Adapter {
+class EEBusAdapter extends utils.Adapter {
     constructor(options) {
         super({
             ...options,
-            name: 'nexowatt-eebus',
+            name: 'eebus',
         });
 
         this.on('ready', this.onReady.bind(this));
@@ -69,7 +69,7 @@ class NexowattEEBus extends utils.Adapter {
             'imsys.voltageL2': {
                 name: 'Voltage L2',
                 unit: 'V',
-                role: 'value.voltage',
+                'role': 'value.voltage',
             },
             'imsys.voltageL3': {
                 name: 'Voltage L3',
@@ -231,7 +231,7 @@ class NexowattEEBus extends utils.Adapter {
 }
 
 if (require.main !== module) {
-    module.exports = (options) => new NexowattEEBus(options);
+    module.exports = (options) => new EEBusAdapter(options);
 } else {
-    new NexowattEEBus();
+    new EEBusAdapter();
 }
